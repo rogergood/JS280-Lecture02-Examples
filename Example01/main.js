@@ -1,3 +1,4 @@
+//建立一個叫作Pokemon的樣本
 function Pokemon(nationalNo, hp, type, species, height, weight, abilities, localNo, japanese) {
     this.nationalNo = nationalNo;
     this.hp = hp;
@@ -11,12 +12,12 @@ function Pokemon(nationalNo, hp, type, species, height, weight, abilities, local
     this.attack = function (other) {
         other.hp -= 20;
     };
-}
+} //{}為物件的形態
 
 var Fushigidane = new Pokemon(
     1,
     1200,
-    ["GRASS", "POISON"],
+    ["GRASS", "POISON"], //[]為陣列的形態
     "Seed Pokémon",
     0.71,
     6.9,
